@@ -1,0 +1,30 @@
+If JDateChooser doesnot appear in Palette Window, then 
+Go to https://toedter.com/jcalendar/
+
+Download the jcalendar-1.4.zip 
+Extract it,
+
+Netbeans IDE:
+   Select Tools Menu
+   Palette Options
+   Swing/AWT Component
+   Palette Manager
+   Add From Jar
+   Select extracted jcalendar1.4.jar
+   Hit Next Button
+   Select All Available Component
+   Next
+   Select Swing Controls
+   Finish
+
+
+
+Clone this repository:- 
+   Open cmd or terminal 
+   & type this command to run this project
+
+  java swingdemo/loginsignupsystem/LoginPage    (To Start Running The Project)
+
+
+
+The "com" folder here is extracted from the above downloaded jar file. It is used for DateChooser Component in Registration Form...
