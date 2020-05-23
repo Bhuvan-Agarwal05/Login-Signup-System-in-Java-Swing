@@ -114,11 +114,21 @@ public class LoginPage extends javax.swing.JFrame {
         passwordField.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         passwordField.setForeground(new java.awt.Color(255, 255, 255));
         passwordField.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(255, 204, 255), 2));
+        passwordField.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                passwordFieldActionPerformed(evt);
+            }
+        });
 
         clearLoginFormBtn.setBackground(new java.awt.Color(217, 30, 24));
         clearLoginFormBtn.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
         clearLoginFormBtn.setText("CANCEL");
         clearLoginFormBtn.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        clearLoginFormBtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                clearLoginFormBtnActionPerformed(evt);
+            }
+        });
 
         loginBtn.setBackground(new java.awt.Color(63, 195, 128));
         loginBtn.setFont(new java.awt.Font("Tahoma", 1, 18)); // NOI18N
@@ -213,6 +223,15 @@ public class LoginPage extends javax.swing.JFrame {
         new SignUpPage().setVisible(true);  // To Move To The Next Page
         dispose();  // And after moving , closing the present page
     }//GEN-LAST:event_linkToSignUpFormMouseClicked
+
+    private void passwordFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_passwordFieldActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_passwordFieldActionPerformed
+
+    private void clearLoginFormBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_clearLoginFormBtnActionPerformed
+        usernameField.setText("");
+        passwordField.setText("");
+    }//GEN-LAST:event_clearLoginFormBtnActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
